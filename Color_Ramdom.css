@@ -1,0 +1,137 @@
+/*|#MakVie-SAinte|*/
+
+*,*::before,*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #fff;
+   position: relative;
+   transition: all .10s ease-in;
+} 
+
+.reply_Container {
+   z-index: 12;
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+i {
+   margin: 10px 3px;
+}
+
+.reply_Container i {
+   font-size: 30px;
+   color: #484747;
+   border-radius: 8px;
+   padding: 8px 11px;
+   cursor: pointer;
+   transition: .33s ease-out;
+}
+
+.reply_Container i:hover {
+   color: #fff;
+   background-color: deeppink;
+}
+
+.boite_Couleur {
+   width: 100%;
+   height: 100vh;
+   background-color: #827cf0;
+   padding-top: 10px;
+   position: absolute;
+}
+
+.bas {
+   position: fixed;
+   bottom: 0; left: 0;
+   width: 100%;
+   height: max-content;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: row-reverse;
+   padding: 20px 10px;
+   z-index: 10;
+}
+
+button.hasard {
+   width: max-content;
+   height: 60px;
+   border: 0; outline: 0;
+   background-color: #333;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 17px;
+   padding: 2px 15px;
+   margin-right: 15px;
+   cursor: pointer;
+   transition: all .44s ease-out;
+}
+
+button:hover {
+   opacity: 0.9;
+   transition: .33s ease-out;
+}
+
+.bas h1 {
+   color: #333;
+   font-family: 'Lucida Sans Unicode',sans-serif;
+   margin-right: 15px;
+}
+
+.bas .copy {
+   position: absolute;
+   left: 448px;
+   color: #333;
+   font-size: 30px;
+   border: 0; outline: 0;
+   cursor: pointer;
+   transform-origin: center;
+   transition: .55s ease-in;
+}
+
+.bas .copy:hover {
+   transform: scale(1.20);
+}
+
+.copie {
+   z-index: 10;
+   width: max-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   padding: 20px 30px 20px 10px;
+   background-color: #01ab01;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   position: fixed;
+   top: 60px;
+   left: 0;
+   transform: translateX(-100%);
+   transition: transform .33s ease-out;
+   animation: apparition 3s ease-out;
+}
+
+@keyframes apparition {
+   
+   20% {
+      transform: translateX(0%);
+   }
+   83% {
+      transform: translateX(0%);
+   }
+   97% {
+      transform: translateX(-100%);
+   }
+}
+
+/* 925DEV */
